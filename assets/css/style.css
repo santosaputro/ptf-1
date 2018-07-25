@@ -11,48 +11,151 @@ h1, h2, h3, h4, h5, h6, {
   font-family: 'Playfair Display';
 }
 
-  h1 {
-  	font-family: 'Playfair Display';
-  	display: inline-block;
-  	font-size: 74px;
-  	font-weight: 900;
-  	line-height: 60px;
-  	margin-bottom: 52px;
-  }
-
-  h1:after {
-    /* background-color: #F1EDF5; */
-  	content: '';
-  	display: block;
-  	height: 8px;
-  	margin-top: 12px;
-  }
-
-  p {
-  	font-family: 'Source Sans Pro';
-  	font-weight: 500;
-  	font-size: 24px;
-  	line-height: 36px;
-  	margin-bottom: 24px;
-  	max-width: 380px;
-  }
-
-  a {
-  	display: inline-block;
-  	font-family: 'Source Sans Pro';
-  	font-size: 14px;
-  	font-weight: 500;
-  	letter-spacing: 1px;
-  	line-height: 24px;
-  	text-decoration: none;
-  }
-
-.navbar {
-  padding: 1.5em;
-  color: #000;
+h1 {
+  font-family: 'Playfair Display';
+  display: inline-block;
+  font-size: 74px;
+  font-weight: 900;
+  line-height: 65px;
+  margin-bottom: 52px;
 }
 
-/*container-----------------------------------*/
+h1:after {
+  /* background-color: #F1EDF5; */
+  content: '';
+  display: block;
+  height: 8px;
+  margin-top: 12px;
+}
+
+h2 {
+  font-family: 'Playfair Display';
+  font-weight: 700;
+  line-height: 55px;
+  margin-bottom: 42px;
+}
+
+h3 {
+  font-family: 'Playfair Display';
+  font-weight: 700;
+  line-height: 45px;
+  margin-bottom: 32px;
+}
+
+h4 {
+  font-family: 'Playfair Display';
+  font-weight: 700;
+  line-height: 35px;
+  margin-bottom: 22px;
+}
+
+p {
+	font-family: 'Source Sans Pro';
+	font-weight: 500;
+	font-size: 24px;
+	line-height: 36px;
+	margin-bottom: 24px;
+	/* max-width: 380px; */
+}
+
+a {
+	display: inline-block;
+	font-family: 'Source Sans Pro';
+	font-size: 14px;
+	font-weight: 500;
+	letter-spacing: 1px;
+	line-height: 24px;
+	text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+
+}
+
+/*Navbar-----------------------------------*/
+.navbar {
+  padding: 1.5em;
+  background: rgba(255, 255, 255, 0.97);
+  border-bottom: 0px;
+}
+
+
+.nav-brand a {
+  position: fixed;
+  top: 1em;
+  font-family: 'Playfair Display';
+  font-size: 14px;
+  font-weight: 700;
+  color: #F1EDF5;
+  background: #000000;
+  padding: 3.5em 1em 3.5em 1em;
+  /* border: 4px solid #373848; */
+}
+
+.nav-brand a span {
+  font-family: 'Playfair Display';
+  font-size: 34px;
+  font-weight: 900;
+
+}
+
+@media (max-width: 768px) {
+  .nav-brand a {
+    position: fixed;
+    top: 1em;
+    padding-bottom: 0;
+    font-family: 'Playfair Display';
+    font-size: 14px;
+    font-weight: 700;
+    color: #373848;
+    background: #FFFFFF;
+    padding: 0;
+    border: 0;
+  }
+
+  .nav-brand a span {
+    font-family: 'Playfair Display';
+    font-size: 34px;
+    font-weight: 900;
+
+  }
+}
+
+.navbar-default .navbar-nav>li>a {
+  color: #373848;
+  font-weight: initial;
+}
+
+.navbar-default .navbar-nav>li>a:focus, .navbar-default .navbar-nav>li>a:hover {
+    color: #373848;
+    background-color: transparent;
+    outline: none;
+}
+
+/* Toggle Collapse */
+.navbar-default .navbar-toggle {
+    border-color: transparent;
+}
+
+.navbar-toggle {
+  position: relative;
+  float: right;
+  padding: 9px 10px;
+  margin-top: 8px;
+  margin-right: 15px;
+  margin-bottom: 8px;
+  background-color: transparent;
+  background-image: none;
+  border: 1px solid transparent;
+  border-radius: 0;
+}
+
+.navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover {
+  background-color: transparent;
+}
+
+/*Container-----------------------------------*/
 @media (min-width: 768px) {
   .container {
     width: 750px;
@@ -75,7 +178,7 @@ h1, h2, h3, h4, h5, h6, {
 }
 
 /*Header Image Card-----------------------------------*/
-.header-image-card {
+.image-card-left {
   position: relative;
   /* display: flex; */
   /* -webkit-box-orient: vertical; */
@@ -87,39 +190,110 @@ h1, h2, h3, h4, h5, h6, {
   margin-left: -15.5em;
 }
 
-.header-image-overlay {
+.image-overlay-left {
   position: absolute;
   top: 0;
   bottom: 0;
   left: 0;
   right: 50%;
-  -webkit-box-align: center !important;
+  /* -webkit-box-align: center !important;
   -ms-flex-align: center !important;
   align-items: center !important;
   display: -webkit-box !important;
   display: -ms-flexbox !important;
-  display: flex !important;
+  display: flex !important; */
   padding-right: 3em;
+  padding-left: 19em;
   background-color: #20C5E1;
   opacity: 0.9;
-  text-align: right;
+  /* text-align: right; */
 }
 
-.header-image-overlay h1 {
+.image-overlay-left h1 {
+  position: absolute;
+  bottom: 0;
+  padding-bottom: 3em;
   color: #F1EDF5;
   font-family: 'Playfair Display', serif;
   font-weight: 700;
 }
 
-.header-image-overlay p {
+.image-overlay-left a {
+  position: absolute;
+  bottom: 0;
+  /* right: 3em; */
+  margin-bottom: 15em;
+}
+
+.image-overlay-left p {
   color: #F1EDF5;
 }
 
+/* text */
+.text-overlay {
+  position: relative;
+  height: 100%;
+}
+.text-overlay-right {
+  position: absolute;
+  /* left: 0; */
+  left: 75%;
+  background-color: #20C5E1;
+  opacity: 0.9;
+  margin-right: -14em;
+  padding-bottom: 10em;
+}
 
+
+/*blockquote-----------------------------------*/
+blockquote {
+      border-left: 4px solid #373848;
+      color: #D1D0DD;
+    	line-height: 36px;
+      text-align: justify;
+}
+
+.bc-none {
+  border-left: 0px;
+  color: #D1D0DD;
+  line-height: 36px;
+}
+
+/*Button-----------------------------------*/
+.link-go {
+  position: relative;
+  display: inline-block;
+  font-weight: 700;
+  font-size: 16px;
+  text-decoration: none;
+}
+
+.link-go i.ion-ios-remove {
+  position: absolute;
+  bottom: -5px;
+  left: 3.59em;
+  font-size: 2em;
+}
+
+.link-go i {
+  position: absolute;
+  bottom: -5px;
+  left: 4em;
+  font-size: 2em;
+}
+
+/*Footer-----------------------------------*/
+.footer {
+  background: #373848;
+  color: #e9e4ed;
+  padding-top: 1em;
+  padding-bottom: 1em;
+  word-spacing: 0.4em;
+}
 
 
 /*-----------------------------------*/
-.color1 {
+.dark {
   color: #373848;
 }
 
