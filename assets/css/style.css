@@ -1,0 +1,144 @@
+/*
+font-family: 'Playfair Display', serif;
+font-family: 'Source Sans Pro', sans-serif;
+
+*/
+body {
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6, {
+  font-family: 'Playfair Display';
+}
+
+  h1 {
+  	font-family: 'Playfair Display';
+  	display: inline-block;
+  	font-size: 74px;
+  	font-weight: 900;
+  	line-height: 60px;
+  	margin-bottom: 52px;
+  }
+
+  h1:after {
+    /* background-color: #F1EDF5; */
+  	content: '';
+  	display: block;
+  	height: 8px;
+  	margin-top: 12px;
+  }
+
+  p {
+  	font-family: 'Source Sans Pro';
+  	font-weight: 500;
+  	font-size: 24px;
+  	line-height: 36px;
+  	margin-bottom: 24px;
+  	max-width: 380px;
+  }
+
+  a {
+  	display: inline-block;
+  	font-family: 'Source Sans Pro';
+  	font-size: 14px;
+  	font-weight: 500;
+  	letter-spacing: 1px;
+  	line-height: 24px;
+  	text-decoration: none;
+  }
+
+.navbar {
+  padding: 1.5em;
+  color: #000;
+}
+
+/*container-----------------------------------*/
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+@media (min-width: 1200px) {
+  .container-fluid {
+    width: 1170px;
+  }
+}
+@media (min-width: 1200px) {
+  .container {
+    width: 970px;
+  }
+}
+
+/*Header Image Card-----------------------------------*/
+.header-image-card {
+  position: relative;
+  /* display: flex; */
+  /* -webkit-box-orient: vertical; */
+  /* -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column; */
+  /* min-width: 0; */
+  /* word-wrap: break-word; */
+  margin-left: -15.5em;
+}
+
+.header-image-overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 50%;
+  -webkit-box-align: center !important;
+  -ms-flex-align: center !important;
+  align-items: center !important;
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+  padding-right: 3em;
+  background-color: #20C5E1;
+  opacity: 0.9;
+  text-align: right;
+}
+
+.header-image-overlay h1 {
+  color: #F1EDF5;
+  font-family: 'Playfair Display', serif;
+  font-weight: 700;
+}
+
+.header-image-overlay p {
+  color: #F1EDF5;
+}
+
+
+
+
+/*-----------------------------------*/
+.color1 {
+  color: #373848;
+}
+
+.color2 {
+  color: #20C5E1;
+}
+
+.color3 {
+  color: #D1D0DD;
+}
+
+.color4 {
+  color: #E9E4ED;
+}
+
+.color5 {
+  color: #F1EDF5;
+}
+
+.pd-3 {
+  padding: 3.3em;
+}
