@@ -178,38 +178,24 @@ a:hover {
 }
 
 /*Header Image Card-----------------------------------*/
-.image-card-left {
+.lg-image-card-left {
   position: relative;
-  /* display: flex; */
-  /* -webkit-box-orient: vertical; */
-  /* -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column; */
-  /* min-width: 0; */
-  /* word-wrap: break-word; */
   margin-left: -15.5em;
 }
 
-.image-overlay-left {
+.lg-image-overlay-left {
   position: absolute;
   top: 0;
   bottom: 0;
   left: 0;
   right: 50%;
-  /* -webkit-box-align: center !important;
-  -ms-flex-align: center !important;
-  align-items: center !important;
-  display: -webkit-box !important;
-  display: -ms-flexbox !important;
-  display: flex !important; */
   padding-right: 3em;
   padding-left: 19em;
   background-color: #20C5E1;
   opacity: 0.9;
-  /* text-align: right; */
 }
 
-.image-overlay-left h1 {
+.lg-image-overlay-left h1 {
   position: absolute;
   bottom: 0;
   padding-bottom: 3em;
@@ -218,16 +204,94 @@ a:hover {
   font-weight: 700;
 }
 
-.image-overlay-left a {
+.lg-image-overlay-left a {
   position: absolute;
   bottom: 0;
-  /* right: 3em; */
   margin-bottom: 15em;
 }
 
-.image-overlay-left p {
+.lg-image-overlay-left p {
   color: #F1EDF5;
 }
+
+.img-card{
+  position: relative;
+}
+
+.img-card-caption {
+  position: relative
+  padding: 1em;
+  background: #FFFFFF;
+}
+
+.img-card-title {
+  position: absolute;
+  background: #20C5E1;
+  color: #FFFFFF;
+  padding: 0.5em 2em;
+  top: 45%;
+  left: 30%;
+  font-weight: 700;
+
+}
+
+.img-card-content {
+  padding: 2em;
+  font-size: 23px;
+  text-align: center;
+}
+
+.img-card-footer {
+  color: #D1D0DD;
+  font-size: 12px;
+  font-weight: 700;
+  text-align: center;
+  padding-bottom: 1.5em;
+}
+
+/* SECTION */
+.section3-overlay {
+  background: linear-gradient(to right, #20C5E1 0%, #20C5E1 67.6%,#20C5E1 50%,white 50%,white 100%);
+  padding-bottom: 12em;
+}
+
+.section5-overlay {
+  background: linear-gradient(to left, #20C5E1 0%, #20C5E1 67.6%,#20C5E1 50%,white 50%,white 100%);
+  padding-bottom: 10em;
+  margin-top: -10%
+}
+
+/* Social */
+.social-card {
+  position: relative;
+  display: block;
+  padding: 1em 1.5em 1.5em 1.5em;
+}
+
+.social-header {
+}
+
+.social-header i {
+  font-size: 21px;
+  float: left;
+}
+
+.social-header span {
+  float: right;
+}
+
+.wide-social-content {
+  padding: 2.5em 2em 1.2em 2em;
+  font-size: 16px;
+  text-align: center;
+}
+
+.md-social-content {
+  padding: 2.5em 0em 2.6em 0em;
+  font-size: 16px;
+  text-align: center;
+}
+
 
 /* text */
 .text-overlay {
@@ -236,7 +300,6 @@ a:hover {
 }
 .text-overlay-right {
   position: absolute;
-  /* left: 0; */
   left: 75%;
   background-color: #20C5E1;
   opacity: 0.9;
@@ -247,10 +310,10 @@ a:hover {
 
 /*blockquote-----------------------------------*/
 blockquote {
-      border-left: 4px solid #373848;
-      color: #D1D0DD;
-    	line-height: 36px;
-      text-align: justify;
+  border-left: 4px solid #373848;
+  color: #D1D0DD;
+  line-height: 36px;
+  text-align: justify;
 }
 
 .bc-none {
@@ -291,10 +354,71 @@ blockquote {
   word-spacing: 0.4em;
 }
 
+ul.social-line {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+.social-line li {
+  float: left;
+}
+
+.social-line li a {
+  display: block;
+  color: #000;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 25px
+}
+
+/*Input -----------------------------------*/
+:focus {outline: none;}
+
+input[type="text"]{
+  font: 15px/24px "Lato", Arial, sans-serif;
+  color: #333;
+  background: transparent;
+  width: 100%;
+  box-sizing: border-box;
+  letter-spacing: 1px;
+}
+
+.effect-1 {
+  border: 0;
+  padding: 7px 0;
+  border-bottom: 1px solid #333;
+}
+
+.effect-1 ~ .focus-border {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: #000;
+  transition: 0.4s;
+}
+
+.effect-1:focus ~ .focus-border {
+  width: 100%;
+  transition: 0.4s;
+}
+
+
+
+
+
 
 /*-----------------------------------*/
-.dark {
+.c-dark {
   color: #373848;
+}
+
+.c-white {
+  color: #FFFFFF;
 }
 
 .color2 {
@@ -313,6 +437,35 @@ blockquote {
   color: #F1EDF5;
 }
 
+/* Background Color */
+.bg-dark {
+  background: #000;
+}
+
+.bg-twitter {
+  background: #55acee;
+}
+
+.bg-gplus {
+  background: #ff0000;
+}
+
+.no-pd {
+  padding: 0;
+}
+
+.pd-1 {
+  padding: 1.1em;
+}
+
+.pd-2 {
+  padding: 1.1em;
+}
+
 .pd-3 {
   padding: 3.3em;
+}
+
+.shadow {
+  box-shadow: 12px 6px 20px 3px;
 }
